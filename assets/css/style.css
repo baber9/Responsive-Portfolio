@@ -1,0 +1,495 @@
+/* Shared Styles */
+
+
+h1, h2, h3 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+p, a, label, textarea {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 14px;
+    color: #666666;
+}
+
+body {
+    margin: 0px;
+    background-image: url("../images/circles-light.png");
+}
+
+/* Header Styles */
+
+.header {
+    width: 100vw;
+    margin: auto;
+}
+
+.header #links a:hover {color: #8ab70f;}
+
+.header #links a {
+    color: #a1a1a1;
+    text-decoration: none;
+}
+
+#nav {
+    background-color: #ffffff;
+    border-bottom: 2px solid #cccccc;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 25px;
+}
+
+#name {
+    background-color: #4aaaab;
+    height: 80px;
+    width: 200px;
+    float: left;
+    margin-left: 50px;
+
+}
+
+    /* Nav Bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding-right: 50px;
+}
+
+li {
+    display: block;
+    padding: 25px 10px 15px 10px;
+    float: right;
+    right: 10px;
+}
+
+/* Content Styles */
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+h2 {
+    padding-left: 20px;
+    color: #4aaaa5;
+}
+
+h3 {
+    padding-left: 20px;
+    color: #4aaaa5;
+}
+
+p {
+    line-height: 30px;
+}
+
+hr {
+    margin: 0px 20px 20px 20px;
+    border: 1px solid #dddddd;
+}
+
+#mainContent {
+    position: relative;
+    width: 646px;
+    background-color: #ffffff;
+    float: left;
+    left: 50px;
+    margin-right: 5px;
+    border: 2px solid #dddddd;
+    margin-bottom: 150px;
+}
+
+#mainContent p {
+    padding: 5px 30px 10px 20px;
+}
+
+
+    /* BIO IMAGE ONLY */
+#bio-img {
+    width: 150px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    padding-right: 20px;
+}
+
+    /* PORTFOLIO ONLY */
+.portfolio_img {
+    width: 250px;
+    margin: auto;
+    padding: 20px;
+    opacity: 0.9;
+    filter: alpha(opacity=90); /* <= IE8 */
+    border-radius: 25px;
+}
+
+.portfolio_img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity); /* <= IE8 */
+}
+
+.portfolio_img_box {
+    position: relative;
+    width: 50%;
+    float: left;
+}
+
+.portfolio_label {
+    position: absolute;
+    width: 250px;
+    color: #ffffff;
+    background-color: #4aaaab;
+    height: 30px;
+    bottom: 30px;
+    margin-left: 29.5px;
+    opacity: 0.9;
+    filter: alpha(opacity=90); /* <= IE8 */
+    line-height: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.column {
+    flex: 50%;
+    padding: 0 4px;
+    text-align: center;
+}
+
+    /* CONTACT ONLY */
+textarea, input[type=text] {
+    width: 90%;
+    padding: 12px 10px;
+    margin: 8px 30px;
+    box-sizing: border-box;
+    display: block;
+}
+
+label {
+    margin-left: 30px;
+    font-weight: bolder;
+}
+
+input[type=submit] {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 10px 30px;
+    cursor: pointer;
+    border: none;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80); /* <= IE8 */
+}
+
+textarea {
+    height: 200px;
+    resize: vertical;
+}
+
+
+/* Connect Icons Only */
+img {
+    width: 60px;
+    margin: auto;
+    padding: 8px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#icons {
+    text-align: center;
+}
+
+#connect {
+    position: relative;
+    width: 266px;
+    background-color: #ffffff;
+    float: right;
+    right: 50px;
+    margin-left: 5px;
+    border: 2px solid #dddddd;
+}
+
+/* Footer Styles */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 150px;
+}
+
+.footer {
+    display: block;
+    position: absolute;
+    background-color: #666666;
+    border-top: 5px solid #4aaaa5;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+}
+
+#copyright {
+    color: #d9d9d9;
+    clear: both;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 40px;
+    color: lightgray;
+}
+
+/*-------------------------------------------------*/
+
+/* Media Queries */
+
+@media only screen and (max-width: 980px) {
+    #name {
+        background-color: black; 
+      } /*  ---------- DELETE LATER ----------- */
+
+    /* Shared Media Queries */
+ 
+
+    #name {
+        position: absolute;
+        left: 100px;
+        margin-left: 0;
+    }
+
+    #links {
+        position: relative;
+    }
+
+    #mainContent {
+        position: relative;
+        width: 500px;
+        left: 100px;
+        margin: 0 0 150px 0;
+    }
+
+    #connect {
+        position: relative;
+        float: left;
+        left: 180px;
+        text-align: center;
+        width: 220px;
+        margin: 0;
+    }
+
+    h3 {
+        padding-left: 0px;
+    }
+
+    img {
+        width: 60px;
+        margin: auto;
+        padding: 2px;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    /* Index/Contact Media Queries */
+
+    #bio-img {
+        width: 200px;
+        display: block;
+        float: none;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    #quote {
+        padding-left: 30px;
+    }
+
+    /* Portfolio Media Queries */
+
+    .portfolio_img_box {
+        float: left;
+        margin: auto;
+        width: 100%;
+    }
+
+    .portfolio_label {
+        left: 81px;
+    }
+
+    /* Contact Media Queries */
+        /* NONE */
+}
+
+/* -----------------------------FINISHED BELOW------------------------------*/
+
+@media only screen and (max-width: 768px) {
+
+    /* Navbar Media Queries */
+    #name {
+        position: absolute;
+        left: 10px;
+    }
+
+    #links {
+        position: relative;
+    }
+
+    /* Index/Contact Media Queries */
+    #mainContent {
+        position: relative;
+        left: 10px;
+        width: 732px;
+        margin-bottom: 0;
+    }
+
+    #bio-img {
+        float: left;
+    }
+
+    #quote {
+        padding-left: 60px;
+    }
+
+    /* Connect Media Queries */
+    #connect {
+        position: relative;
+        float: left;
+        width: 732px;
+        left: 10px;
+        bottom: 0;
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 150px;
+    }
+
+    h3 {
+        padding-left: 20px;
+    }
+      
+    img {
+        width: 60px;
+        padding-left: 20px;
+        float: left;
+    }
+
+    /* Portfolio Media Queries */
+    .portfolio_img_box {
+        position: relative;
+        width: 50%;
+    }
+
+    .portfolio_img {
+        padding-left: 50px;
+        float: left;
+    }
+
+    .portfolio_label {
+        left: 20px;
+    }
+
+}
+
+/*-------------------------DONT TOUCH ANYTHING BELOW---------------------------------*/
+
+@media only screen and (max-width: 640px) {
+     
+    /* Navbar Media Queries */
+    .header {
+        width: 638px;
+        position: static;
+    }
+
+    #nav {
+        height: 90px;
+        margin-bottom: 40px;
+        position: static;
+        width: 638px;
+    }
+
+    #name {
+        position: relative;
+        width: 638px;
+        left: -20px;
+        top: -20px;
+        text-align: center;
+    }
+
+    #links {
+        position: relative;
+        left: -50px;
+    }
+
+    #links ul {
+        width: 638px;
+        padding: 0;
+    }
+
+    #links ul li {
+        padding: 0 40px;
+        float: right;
+    }
+   
+
+    /* Index/Contact Media Queries */
+    #mainContent {
+        position: relative;
+        left: 10px;
+        margin-bottom: 0;
+        width: calc(638px - 30px);
+    }
+
+    #bio-img {
+        float: none;
+    }
+
+    #quote {
+        padding-left: 30px;
+    }
+
+    /* Connect Media Queries */
+    #connect {
+        position: relative;
+        width: calc(638px - 30px);
+    }
+
+    /* Portfolio Media Queries */
+    .portfolio_img_box {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .portfolio_img {
+        position: relative;
+        padding: 25px 0;
+        float: none;
+        margin: auto;
+        
+    }
+
+    .portfolio_label {
+        position: relative;
+        margin: auto;
+        left: auto;
+        bottom: 65px;
+    }
+   
+    .footer {
+        width: 638px;
+    }
+}
